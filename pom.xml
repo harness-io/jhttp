@@ -12,7 +12,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <harnessArgLine></harnessArgLine>
     </properties>
 
     <build>
@@ -53,14 +52,6 @@
                 <groupId>org.codehaus.sonar</groupId>
                 <artifactId>sonar-maven3-plugin</artifactId>
                 <version>4.5.3</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-                <configuration>
-                    <argLine>${harnessArgLine}  @{argLine} </argLine>
-                </configuration>
             </plugin>
         </plugins>
     </build>
