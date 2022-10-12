@@ -69,7 +69,7 @@ public class RequestLine {
     @Override
     public String toString() {
         if (version != null) {
-            return String.format("%s %s %s", method, uri, version);
+            return String.format("%s asdasd %s %s", method, uri, version);
         } else {
             return String.format("%s %s", method, uri);
         }
