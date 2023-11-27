@@ -10,6 +10,7 @@
     <name>jhttp</name>
 
     <properties>
+        <harnessArgLine></harnessArgLine>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -28,9 +29,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
-<!--                 <configuration>
-                    <reportsDirectory>set-during-execution</reportsDirectory>
-                </configuration> -->
+                <configuration>
+                    <argLine>@{argLine} ${harnessArgLine} </argLine>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -75,9 +76,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>3.2.1</version>
-<!--                 <configuration>
-                    <outputDirectory>${basedir}/target/result</outputDirectory>
-                </configuration> -->
+                <configuration>
+                    <argLine>@{argLine} ${harnessArgLine} </argLine>
+                </configuration>
             </plugin>
         </plugins>
     </reporting>
