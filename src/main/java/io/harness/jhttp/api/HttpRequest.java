@@ -29,7 +29,7 @@ public interface HttpRequest {
     String getHeaderValue(String name);
 
     /**
-     * Get a header values by name
+     * Get a header value by name
      * 
      * @param name Header name, case insensitive.
      * @return Header values or an empty list if there is no such header.
