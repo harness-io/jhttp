@@ -3,6 +3,7 @@ LABEL maintainer="Shivakumar Ningappa <shivagowda@gmail.com>"
 #
 
 #
+#
 # Copy the already build jar to the image
 COPY target/jhttp-1.0-SNAPSHOT.jar /bin/
 
