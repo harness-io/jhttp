@@ -6,6 +6,7 @@ import org.apache.commons.lang3.StringUtils;
  * A HTTP request or response header.
  * 
  *
+ *
  */
 public class Header {
 
